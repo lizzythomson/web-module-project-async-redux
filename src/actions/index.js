@@ -21,7 +21,7 @@ export const getFox = () => (dispatch) => {
   axios
     .get(`https://randomfox.ca/images/${Math.floor(Math.random() * 100)}.jpg`)
     .then((resp) => {
-      dispatch(fetchSuccess(resp.data.results[0]));
+      dispatch(fetchSuccess(resp.config.url));
     })
     .catch((err) => {
       dispatch(fetchFail(err));

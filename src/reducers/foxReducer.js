@@ -2,7 +2,7 @@ import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS } from './../actions';
 
 const initialState = {
   foxImage: `https://randomfox.ca/images/${Math.floor(
-    Math.random() * 100
+    Math.random() * 123
   )}.jpg`,
   isFetching: false,
   error: '',
