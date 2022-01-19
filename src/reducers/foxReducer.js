@@ -1,8 +1,9 @@
 import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS } from './../actions';
 
 const initialState = {
-  foxImage:
-    'https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm94fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  foxImage: `https://randomfox.ca/images/${Math.floor(
+    Math.random() * 100
+  )}.jpg`,
   isFetching: false,
   error: '',
 };
